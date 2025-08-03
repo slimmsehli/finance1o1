@@ -1,8 +1,11 @@
 import pandas as pd
 import yfinance as yf
+import os
 from datetime import datetime
 import warnings
 warnings.filterwarnings("ignore")
+
+DEBUG = 0
 
 def get_annual_return(ticker, year):
     start = f"{year}-01-01"
@@ -48,20 +51,45 @@ def evaluate_top10_portfolio(contributors_csv, year):
     if valid_tickers == 0:
         print("❌ No valid tickers. Exiting.")
         return
-
+	 
     # Get S&P 500 return
     sp500_return = get_annual_return("^GSPC", year)
-    print(f"\n📈 Portfolio Return: {portfolio_return*100:.2f}%")
-    print(f"📉 S&P 500 Return: {sp500_return*100:.2f}%" if sp500_return else "❌ Couldn't fetch S&P 500 data")
+    
+    beat_by = None
+    if sp500_return is not None:
+        beat_by = portfolio_return - sp500_return
+    
+    result = {
+        "Year": year,
+        "Tickers": ','.join(tickers),
+        "Portfolio_Return": round(portfolio_return * 100, 2),
+        "SP500_Return": round(sp500_return * 100, 2) if sp500_return else None,
+        "Beat_By": round(beat_by * 100, 2) if beat_by else None
+    }
+    
+    if DEBUG:
+        print(f"\n📈 Portfolio Return: {result['Portfolio_Return']}%")
+        print(f"📉 S&P 500 Return: {result['SP500_Return']}%")
+        print(f"🏆 Beat by: {result['Beat_By']}%")
+    return result
+    #print(f"\n📈 Portfolio Return: {portfolio_return*100:.2f}%")
+    #print(f"📉 S&P 500 Return: {sp500_return*100:.2f}%" if sp500_return else "❌ Couldn't fetch S&P 500 data")
 
-    if sp500_return:
-        delta = portfolio_return - sp500_return
-        print(f"🏆 Beat by: {delta*100:.2f}%")
+    #if sp500_return:
+    #    delta = portfolio_return - sp500_return
+    #    print(f"🏆 Beat by: {delta*100:.2f}%")
 
-if __name__ == "__main__":
-    contributors_file = "stocks_sorted.csv"
-    test_year = 2025  # Change this to any year you'd like to test
-    evaluate_top10_portfolio(contributors_file, test_year)
+allresults = []
+contributors_file = "outputs/stocks_sorted.csv"
+test_year = 2023  # Change this to any year you'd like to test
+
+result = evaluate_top10_portfolio(contributors_file, test_year)
+if result:
+	allresults.append(result)
+results_df = pd.DataFrame(allresults)
+results_df.to_csv(f"top10_portfolio_performance_{test_year}.csv", index=False)
+
+#results_df.to_csv(f"top10_portfolio_performance_{start_year}_{end_year}.csv", index=False)
 
 
 

@@ -1,7 +1,0 @@
-tickers,portfolio_return,sp500_return,beat_by
-"['AMGN', 'PLTR', 'HD', 'DHR', 'MDT']",21.73,6.3,15.43
-"['GE', 'NVDA', 'NOW', 'HON', 'KO']",11.66,6.3,5.37
-"['PEP', 'ANET', 'LOW', 'BKNG', 'AMD']",10.08,6.3,3.78
-"['AMGN', 'ETN', 'SPGI', 'ABBV', 'INTU']",14.87,6.3,8.57
-"['KLAC', 'AXP', 'MCD', 'GOOG', 'CVX']",15.3,6.3,9.01
-"['APH', 'AMGN', 'WMT', 'UNH', 'VRTX']",18.1,6.3,11.81

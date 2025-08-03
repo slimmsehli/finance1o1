@@ -15,7 +15,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 # global variables
 DEBUG = 0
-start_year = 2024
+start_year = 2023
 end_year = 2025
 trials = 10
 min_assets = 5
@@ -25,7 +25,8 @@ max_assets = 5
 ##### step 1 : get the list of the top 100 companies of the sp500 index
 ###########################################################################
 
-
+# dure to the load of generate you can generate this file using the first script 
+# 1_gen_all.py it takes some time to get the data so it can be performane one time 
 top100_csv_path = 'top_100_sp500.csv' #'sp500_top100.csv'
 
 
@@ -251,21 +252,40 @@ def evaluate_top10_portfolio(contributors_csv, year):
 
   # Get S&P 500 return
   sp500_return = get_annual_return("^GSPC", year)
-  print(f"\n📊 Evaluating portfolio for year {year}")
-  print(f"\n📈 Portfolio Return: {portfolio_return*100:.2f}%")
-  print(f"📉 S&P 500 Return: {sp500_return*100:.2f}%" if sp500_return else "❌ Couldn't fetch S&P 500 data")
-
-  if sp500_return:
-      delta = portfolio_return - sp500_return
-      print(f"🏆 Beat by: {delta*100:.2f}%")
+  
+  beat_by = None
+  if sp500_return is not None:
+      beat_by = portfolio_return - sp500_return
+  
+  result = {
+      "Year": year,
+      "Tickers": ','.join(tickers),
+      "Portfolio_Return": round(portfolio_return * 100, 2),
+      "SP500_Return": round(sp500_return * 100, 2) if sp500_return else None,
+      "Beat_By": round(beat_by * 100, 2) if beat_by else None
+  }
+  
+  if DEBUG:
+      print(f"\n📈 Portfolio Return: {result['Portfolio_Return']}%")
+      print(f"📉 S&P 500 Return: {result['SP500_Return']}%")
+      print(f"🏆 Beat by: {result['Beat_By']}%")
+  return result
 
 ################################################
 ##### perform calculation
 
-for i in range(start_year, end_year+1):
- contributors_file = "stocks_sorted.csv"
- test_year = i  # Change this to any year you'd like to test
- evaluate_top10_portfolio(os.path.join(output_dir, contributors_file), test_year)
+all_results = []
+contributors_file = "stocks_sorted.csv"
+for test_year in range(start_year, end_year+1):
+	result =  evaluate_top10_portfolio(os.path.join(output_dir, contributors_file), test_year)
+	if result:
+		all_results.append(result)
+# Save to CSV
+results_df = pd.DataFrame(all_results)
+results_csv_path = os.path.join(output_dir, f"perf_portfolio-10_assets-{min_assets}_trials-{trials}_{start_year}-{end_year}.csv")
+results_df.to_csv(results_csv_path, index=False)
+
+print(f"\n✅ Results saved to: {results_csv_path}")
 
 
 

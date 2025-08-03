@@ -1,8 +1,0 @@
-tickers,portfolio_return,sp500_return,beat_by
-"['GE', 'BKNG', 'WELL', 'ADBE', 'MRK']",19.54,-19.95,39.49
-"['AAPL', 'GOOGL', 'UNP', 'KO', 'APH']",-19.48,-19.95,0.47
-"['TXN', 'VRTX', 'ACN', 'DHR', 'BAC']",-11.01,-19.95,8.94
-"['UNH', 'CB', 'ETN', 'TMUS', 'ABT']",9.18,-19.95,29.13
-"['KO', 'HD', 'KLAC', 'ADBE', 'C']",-12.77,-19.95,7.19
-"['ABT', 'TJX', 'MA', 'INTU', 'HON']",-16.18,-19.95,3.77
-"['AMGN', 'PGR', 'LOW', 'ANET', 'AXP']",-1.05,-19.95,18.9

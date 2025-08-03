@@ -1,158 +1,0 @@
-[*********************100%***********************]  1 of 1 completed
-📥 Loading top 100 tickers...
-📈 Fetching S&P 500 return for the year 2024...
-✅ S&P 500 return for 2024: 24.54%
-🔎 Evaluating combinations...
-Testing combinations:   0%|          | 0/10 [00:00<?, ?it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  10%|█         | 1/10 [00:00<00:03,  2.66it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[*********************100%***********************]  5 of 5 completed
-[**********************60%****                   ]  3 of 5 completedTesting combinations:  20%|██        | 2/10 [00:00<00:02,  2.73it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  30%|███       | 3/10 [00:01<00:02,  2.50it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  40%|████      | 4/10 [00:01<00:02,  2.54it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  50%|█████     | 5/10 [00:01<00:01,  2.57it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  60%|██████    | 6/10 [00:02<00:01,  2.01it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  70%|███████   | 7/10 [00:03<00:01,  2.13it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  80%|████████  | 8/10 [00:03<00:01,  1.92it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  90%|█████████ | 9/10 [00:04<00:00,  2.07it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations: 100%|██████████| 10/10 [00:04<00:00,  2.26it/s]Testing combinations: 100%|██████████| 10/10 [00:04<00:00,  2.25it/s]
-[*********************100%***********************]  1 of 1 completed
-
-✅ Done! Saved 6 outperforming portfolios to 'outperforming_combinations_2024.csv'.
-📈 Fetching S&P 500 return for the year 2025...
-✅ S&P 500 return for 2025: 6.30%
-🔎 Evaluating combinations...
-Testing combinations:   0%|          | 0/10 [00:00<?, ?it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  10%|█         | 1/10 [00:00<00:04,  2.21it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  20%|██        | 2/10 [00:00<00:03,  2.19it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  30%|███       | 3/10 [00:01<00:03,  2.17it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  40%|████      | 4/10 [00:01<00:02,  2.26it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  50%|█████     | 5/10 [00:02<00:02,  2.26it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  60%|██████    | 6/10 [00:02<00:01,  2.38it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************60%****                   ]  3 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  70%|███████   | 7/10 [00:03<00:01,  2.17it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  80%|████████  | 8/10 [00:03<00:01,  1.95it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations:  90%|█████████ | 9/10 [00:04<00:00,  1.86it/s][                       0%                       ][*******************   40%                       ]  2 of 5 completed[**********************60%****                   ]  3 of 5 completed[**********************80%*************          ]  4 of 5 completed[*********************100%***********************]  5 of 5 completed
-Testing combinations: 100%|██████████| 10/10 [00:04<00:00,  1.83it/s]Testing combinations: 100%|██████████| 10/10 [00:04<00:00,  2.02it/s]
-
-✅ Done! Saved 6 outperforming portfolios to 'outperforming_combinations_2025.csv'.
-📊 Simplified Outperforming Combinations (Returns in %):
-                                 tickers  portfolio_return  sp500_return  beat_by
-      ['CB', 'PEP', 'AMGN', 'T', 'BKNG']             31.10         24.54     6.55
-      ['ORCL', 'V', 'PEP', 'SYK', 'TJX']             35.75         24.54    11.20
-      ['JPM', 'APH', 'DIS', 'MSFT', 'C']             28.97         24.54     4.43
-    ['HON', 'PLTR', 'PG', 'ADBE', 'CRM']             47.01         24.54    22.47
-['CRWD', 'CMCSA', 'GOOG', 'LOW', 'ANET']             37.54         24.54    13.00
-['GOOGL', 'LRCX', 'CMCSA', 'IBM', 'APH']             25.64         24.54     1.10
-
-✅ Saved simplified data to 'outperforming_combinations_2024_cleaned.csv'
-📊 Simplified Outperforming Combinations (Returns in %):
-                                tickers  portfolio_return  sp500_return  beat_by
-   ['AMGN', 'PLTR', 'HD', 'DHR', 'MDT']             21.73           6.3    15.43
-     ['GE', 'NVDA', 'NOW', 'HON', 'KO']             11.66           6.3     5.37
-  ['PEP', 'ANET', 'LOW', 'BKNG', 'AMD']             10.08           6.3     3.78
-['AMGN', 'ETN', 'SPGI', 'ABBV', 'INTU']             14.87           6.3     8.57
-  ['KLAC', 'AXP', 'MCD', 'GOOG', 'CVX']             15.30           6.3     9.01
-  ['APH', 'AMGN', 'WMT', 'UNH', 'VRTX']             18.10           6.3    11.81
-
-✅ Saved simplified data to 'outperforming_combinations_2025_cleaned.csv'
-Processing outputs/outperforming_combinations_2023_cleaned.csv ...
-Processing outputs/outperforming_combinations_2022_cleaned.csv ...
-Processing outputs/outperforming_combinations_2025_cleaned.csv ...
-Processing outputs/outperforming_combinations_2024_cleaned.csv ...
-
-Top contributing stocks across all years:
-
-Ticker  Appearances  Average_Beat_By
-  AMGN            5        12.252000
-  ANET            4        20.680000
-   TJX            4        12.317500
-   APH            4         4.452500
-  ADBE            3        23.050000
-   ETN            3        20.560000
-    CB            3        20.383333
-  BKNG            3        16.606667
-   UNH            3        15.506667
-  GOOG            3        15.330000
-   LOW            3        11.893333
-   HON            3        10.536667
-   PEP            3         7.176667
-     C            3         5.733333
-    KO            3         4.343333
-   CRM            2        31.650000
-    PG            2        23.225000
-  COST            2        23.205000
-    GE            2        22.430000
-   MCD            2        20.810000
-  CRWD            2        19.235000
-  PLTR            2        18.950000
-   ABT            2        16.450000
-   DIS            2        14.950000
-   AMD            2        14.625000
-   AXP            2        13.955000
-   UNP            2        12.970000
-   DHR            2        12.185000
-    HD            2        11.310000
-  VRTX            2        10.375000
-   PGR            2        10.295000
-  ORCL            2         8.390000
-  KLAC            2         8.100000
- CMCSA            2         7.050000
-   SYK            2         6.445000
-  INTU            2         6.170000
- GOOGL            2         0.785000
-   XOM            1        47.040000
-  SNPS            1        47.040000
-   BLK            1        47.040000
-   KKR            1        47.040000
-   COP            1        40.830000
-  NFLX            1        40.830000
-  ISRG            1        40.830000
-  WELL            1        39.490000
-   MRK            1        39.490000
-    MS            1        32.610000
-  TSLA            1        32.610000
-  META            1        32.610000
-  TMUS            1        29.130000
-    VZ            1        23.980000
-  AMAT            1        23.980000
-   MDT            1        15.430000
-   WMT            1        11.810000
-     V            1        11.200000
-   CVX            1         9.010000
-   TXN            1         8.940000
-   ACN            1         8.940000
-   BAC            1         8.940000
-  SPGI            1         8.570000
-  ABBV            1         8.570000
-     T            1         6.550000
-    MU            1         5.580000
-  NVDA            1         5.370000
-   NOW            1         5.370000
-   JPM            1         4.430000
-  MSFT            1         4.430000
-    MA            1         3.770000
-   LIN            1         1.690000
-   COF            1         1.690000
-  LRCX            1         1.100000
-   IBM            1         1.100000
-  AAPL            1         0.470000
-
-✅ Saved summary to 'stocks_sorted.csv'
-
-📊 Evaluating portfolio for year 2024
-Top 10 tickers: ['AMGN', 'ANET', 'TJX', 'APH', 'ADBE', 'ETN', 'CB', 'BKNG', 'UNH', 'GOOG']
-
-
-📊 Evaluating portfolio for year 2024
-
-📈 Portfolio Return: 27.80%
-📉 S&P 500 Return: 24.54%
-🏆 Beat by: 3.26%
-
-📊 Evaluating portfolio for year 2025
-Top 10 tickers: ['AMGN', 'ANET', 'TJX', 'APH', 'ADBE', 'ETN', 'CB', 'BKNG', 'UNH', 'GOOG']
-
-
-📊 Evaluating portfolio for year 2025
-
-📈 Portfolio Return: 2.84%
-📉 S&P 500 Return: 6.30%
-🏆 Beat by: -3.46%
