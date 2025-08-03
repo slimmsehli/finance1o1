@@ -1,0 +1,7 @@
+tickers,portfolio_return,sp500_return,beat_by
+"['CB', 'PEP', 'AMGN', 'T', 'BKNG']",31.1,24.54,6.55
+"['ORCL', 'V', 'PEP', 'SYK', 'TJX']",35.75,24.54,11.2
+"['JPM', 'APH', 'DIS', 'MSFT', 'C']",28.97,24.54,4.43
+"['HON', 'PLTR', 'PG', 'ADBE', 'CRM']",47.01,24.54,22.47
+"['CRWD', 'CMCSA', 'GOOG', 'LOW', 'ANET']",37.54,24.54,13.0
+"['GOOGL', 'LRCX', 'CMCSA', 'IBM', 'APH']",25.64,24.54,1.1

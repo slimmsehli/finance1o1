@@ -3,14 +3,23 @@ import pandas as pd
 import numpy as np
 import random
 from tqdm import tqdm
+
+## just remive the warning from the yfinance library
 import warnings
 warnings.filterwarnings("ignore")
 
-start_year = 2022
+## output directory for the files 
+import os
+output_dir = "outputs"
+os.makedirs(output_dir, exist_ok=True)
+
+# global variables
+DEBUG = 0
+start_year = 2024
 end_year = 2025
-trials = 100
+trials = 10
 min_assets = 5
-max_assets = 7
+max_assets = 5
 
 ###########################################################################
 ##### step 1 : get the list of the top 100 companies of the sp500 index
@@ -99,7 +108,8 @@ for i in range(start_year, end_year+1):
 	)
 
 	output_file = f"outperforming_combinations_{year}.csv"
-	results_df.to_csv(output_file, index=False)
+	### replaced the file name with the output directory
+	results_df.to_csv(os.path.join(output_dir, output_file), index=False)
 	print(f"\n✅ Done! Saved {len(results_df)} outperforming portfolios to '{output_file}'.")
 
 
@@ -108,7 +118,7 @@ for i in range(start_year, end_year+1):
 ###########################################################################
 
 def simplify_outperforming_data(input_csv, output_csv):
-	df = pd.read_csv(input_csv)
+	df = pd.read_csv(os.path.join(output_dir, input_csv))
 
 	# Keep only the desired columns
 	simplified_df = df[['tickers', 'portfolio_return', 'sp500_return', 'beat_by']].copy()
@@ -122,7 +132,8 @@ def simplify_outperforming_data(input_csv, output_csv):
 	print(simplified_df.to_string(index=False))
 
 	# Save to CSV
-	simplified_df.to_csv(output_csv, index=False)
+	### replaced the file name with the output directory
+	simplified_df.to_csv(os.path.join(output_dir, output_csv), index=False)
 	print(f"\n✅ Saved simplified data to '{output_csv}'")
 
 ################################################
@@ -174,14 +185,14 @@ def analyze_contributors(files):
 ################################################
 ##### perform calculation
 
-files = glob.glob("outperforming_combinations_*_cleaned.csv")  # Adjust the path/pattern if needed
+files = glob.glob(os.path.join(output_dir, "outperforming_combinations_*_cleaned.csv"))  # Adjust the path/pattern if needed
 
 summary_df = analyze_contributors(files)
 
 print("\nTop contributing stocks across all years:\n")
 print(summary_df.to_string(index=False))
 
-summary_df.to_csv("stocks_sorted.csv", index=False)
+summary_df.to_csv(os.path.join(output_dir, "stocks_sorted.csv"), index=False)
 print("\n✅ Saved summary to 'stocks_sorted.csv'")
 
 
@@ -228,7 +239,8 @@ def evaluate_top10_portfolio(contributors_csv, year):
       ret = get_annual_return(ticker, year)
       if ret is not None:
           portfolio_return += ret * weights
-          print(f"{ticker}: {ret*100:.2f}%")
+          if (DEBUG):
+          	print(f"{ticker}: {ret*100:.2f}%")
           valid_tickers += 1
       else:
           print(f"{ticker}: ❌ No data")
@@ -253,7 +265,7 @@ def evaluate_top10_portfolio(contributors_csv, year):
 for i in range(start_year, end_year+1):
  contributors_file = "stocks_sorted.csv"
  test_year = i  # Change this to any year you'd like to test
- evaluate_top10_portfolio(contributors_file, test_year)
+ evaluate_top10_portfolio(os.path.join(output_dir, contributors_file), test_year)
 
 
 

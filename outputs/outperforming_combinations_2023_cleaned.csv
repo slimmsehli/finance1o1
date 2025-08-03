@@ -1,0 +1,8 @@
+tickers,portfolio_return,sp500_return,beat_by
+"['DIS', 'AMD', 'UNP', 'CB', 'CRWD']",50.2,24.73,25.47
+"['CRM', 'COP', 'NFLX', 'ISRG', 'COST']",65.56,24.73,40.83
+"['UNH', 'MU', 'C', 'ORCL', 'COST']",30.31,24.73,5.58
+"['MS', 'TJX', 'TSLA', 'MCD', 'META']",57.34,24.73,32.61
+"['SYK', 'TJX', 'PGR', 'LIN', 'COF']",26.42,24.73,1.69
+"['VZ', 'PG', 'GOOG', 'ETN', 'AMAT']",48.71,24.73,23.98
+"['XOM', 'SNPS', 'ANET', 'BLK', 'KKR']",71.77,24.73,47.04
