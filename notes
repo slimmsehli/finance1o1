@@ -1,0 +1,15 @@
+#pip install yfinance pandas numpy itertools tqdm
+
+
+
+
+##   run_market_predit.py : get the top 100 companies and generate the best outperformer stocks 
+#### input 		:		top_100_sp500.csv
+#### output 	:		 outperforming_combinations_2024.csv
+
+
+### get_all.py			: get the list of the sp500 index companies and then the top 100 by market cap
+#### input 		: nothing
+#### output		: top_100_sp500.csv
+
+# alias pc='rm -rf output.log; python3 "$1" |& tee output.log'
